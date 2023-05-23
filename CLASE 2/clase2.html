@@ -6,30 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <style>
-        form {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            border: 1px solid black;
-            padding: 1rem;
-            width: fit-content;
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        h1 {
-            font-size: 2rem;
-            margin: 0;
+        .formulario-clase2 {
+            width: 25rem;
+            padding: 1.875rem;
+            margin: auto;
+            margin-top: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 1px solid black;
+        }
+
+        .formulario-clase2 h1 {
             padding-bottom: 1rem;
         }
 
         .forma{
-            width: 98%;
+            width: 100%;
         }
 
         .boton{
-            margin-top: .5rem;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.3rem 0.9rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <form>
+    <form class="formulario-clase2">
         <h1>Ejercicio Formulario</h1>
         <label for="nombres">Nombre:</label><br>
         <input type="text" class="forma" name="nombre" id="nombres">
