@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 - Matias Oliva</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+  
+      .header-flex{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+      }
+      
+      main {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem;
+      }
+      
+      .section {
+        flex-basis: calc(50% - 20px);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        background-color: #f8f8f8;
+        transition: background-color 0.5s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .section:hover {
+        background-color: #eaeaea;
+        transform: scale(1.02);
+      }
+      
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-flex">
+                <h1>Matias Oliva</h1>
+                <h2>Clase 1</h2>
+            </div>
+        </header>
+        <main>
+          <section class="section" style="flex-basis: calc(100% - 20px);">
+            <h2>Sobre mi:</h2>
+            <p>Soy Matias , tengo 25 años , me gusta la programacion pero no tengo mucho conocimiento aun , todo mi conocimiento lo adquiri de forma autodidacta mediante cursos de Udemy , en 2023 quise anotarme en la carrera de programacion de UTN a la cual no pude acceder por falta de cupos hasta que me llego esta oportunidad de aprender con el curso de MDP Programa</p>
+          </section>
+          <section class="section">
+            <h2>Informacion Academica</h2>
+            <ul>
+                <li>Educacion Primaria Colegio N38</li>
+                <li>Secundario Colegio Luis Federico Leloir</li>
+            </ul>
+          </section>
+          <section class="section">
+            <h2>Informacion Personal</h2>
+            <ul>
+                <li>Nombre: Matias Oliva</li>
+                <li>Localidad: Mar del Plata</li>
+                <li>Email:matiasolivaq@gmail.com</li>
+            </ul>
+          </section>
+        </main>
+        <footer>
+          <p>Matias Oliva , para MDP Programa</p>
+        </footer>
+      </div>   
+</body>
+</html>
