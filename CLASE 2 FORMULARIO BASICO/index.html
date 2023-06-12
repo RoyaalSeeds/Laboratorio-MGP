@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .formulario-clase2 {
+            width: 25rem;
+            padding: 1.875rem;
+            margin: auto;
+            margin-top: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 1px solid black;
+        }
+
+        .formulario-clase2 h1 {
+            padding-bottom: 1rem;
+        }
+
+        .forma{
+            width: 100%;
+        }
+
+        .boton{
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.3rem 0.9rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="formulario-clase2">
+        <h1>Ejercicio Formulario</h1>
+        <label for="nombres">Nombre:</label><br>
+        <input type="text" class="forma" name="nombre" id="nombres" required>
+        <br>
+        <label for="apellidos">Apellido:</label><br>
+        <input type="text" class="forma" name="apellido" id="apellidos" required>
+        <br>
+        <label for="paises">Pais:</label><br>
+        <select name="pais" id="paises">
+            <option value="1">Argentina</option>
+            <option value="2">Chile</option>
+            <option value="3">Uruguay</option>
+            <option value="4">Paraguay</option>
+            <option value="5">Otro</option>
+        </select><br>
+        <label for="email">Email:</label><br>
+        <input type="email" class="forma" name="email" id="email" required>
+        <br>
+        <label>Trabaja?</label><br>
+        <input type="radio" value="1" name="trabajo">Si
+        <input type="radio" value="2" name="trabajo">No<br>
+        <button type="submit" class="boton">Enviar</button>
+    </form>
+</body>
+</html>

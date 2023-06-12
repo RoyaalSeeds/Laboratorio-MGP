@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario CSS</title>
+</head>
+<body>
+    <form class="form">
+        <h2 class="form__title">Formulario Clase 5</h2>
+        <p class="form__parrafo"> ¿Aun no tienes cuenta? <a href="#">Registrate Aqui</a></p>
+
+        <div class="form__container">
+            <div class="form__group">
+                <input type="text" id="user" class="form__input" required>
+                <label for="user" class="form__label">Usuario</label>
+                <span class="form__line"></span>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="password" class="form__input" required>
+                <label for="password" class="form__label">Contraseña</label>
+                <span class="form__line"></span>
+            </div>
+
+            <input type="submit" class="form__submit" value="Entrar">
+        </div>
+    </form>
+</body>
+</html>
